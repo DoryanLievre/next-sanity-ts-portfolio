@@ -9,6 +9,11 @@ type Props = {
 }
 
 export default function Skills({skills}: Props) {
+    const sortedSkills = skills.sort((a, b) => {
+        const nameA = a.title.toLowerCase();
+        const nameB = b.title.toLowerCase();
+        return nameA.localeCompare(nameB);
+    });
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -22,13 +27,13 @@ export default function Skills({skills}: Props) {
             </h3>
 
             <div className="grid grid-cols-3 md:grid-cols-4 gap-5">
-                {skills?.slice(0, skills.length / 2).map((skill) => (
+                {sortedSkills?.slice(0, sortedSkills.length / 2).map((skill) => (
                     <Skill
                         key={skill._id}
                         skill={skill}
                     />
                 ))}
-                {skills?.slice(skills.length /2, skills.length).map((skill) => (
+                {sortedSkills?.slice(sortedSkills.length /2, sortedSkills.length).map((skill) => (
                     <Skill
                         key={skill._id}
                         skill={skill}

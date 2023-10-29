@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import * as React from "react";
 import {Experience, Study} from "@/typings";
 import {urlForImage} from "@/sanity/lib/image";
+import { format } from 'date-fns';
+import { fr } from 'date-fns/locale';
 
 type Props = {
     experience?: Experience;
@@ -46,14 +48,14 @@ export default function ExperienceCard({ experience, study }: Props) {
                 <p className="uppercase py-5 text-gray-300 ">
                     {experience ? (
                         experience.isCurrentlyWorkingHere
-                            ? `${experience.dateStarted} - Aujourd'hui`
-                            : `${experience.dateStarted} - ${experience.dateEnded}`
+                            ? `${format(new Date(experience.dateStarted), 'dd MMMM yyyy', { locale: fr })} - Aujourd'hui`
+                            : `${format(new Date(experience.dateStarted), 'dd MMMM yyyy', { locale: fr })} - ${format(new Date(experience.dateEnded), 'dd MMMM yyyy', { locale: fr })}`
                     ) : ""}
 
                     {study ? (
                         study.isCurrentlyStudyingHere
-                            ? `${study.dateStarted} - Aujourd'hui`
-                            : `${study.dateStarted} - ${study.dateEnded}`
+                            ? `${format(new Date(study.dateStarted), 'dd MMMM yyyy', { locale: fr })} - Aujourd'hui`
+                            : `${format(new Date(study.dateStarted), 'dd MMMM yyyy', { locale: fr })} - ${format(new Date(study.dateEnded), 'dd MMMM yyyy', { locale: fr })}`
                     ) : ""}
                 </p>
                 <ul className="list-disc space-y-4 ml-5 text-lg">

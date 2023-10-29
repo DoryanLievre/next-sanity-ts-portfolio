@@ -21,7 +21,7 @@ export default function WorkExperience({ experiences }: Props) {
             className="h-screen flex relative overflow-hidden flex-col md:flex-row max-w-full px-10 justify-evenly mx-auto items-center pt-[100px]"
         >
             <h3 className="absolute top-24 md:top-7 uppercase tracking-[20px] text-gray-500 text-2xl">
-                Expérience
+                Expériences
             </h3>
             <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scroll-smooth scrollbar  scrollbar-track-gray-400/20 scrollbar-thumb-[#22d3ee]/80 scrollbar-thin ">
                 {experiences?.map((experience) => (

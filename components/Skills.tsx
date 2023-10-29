@@ -13,7 +13,8 @@ export default function Skills({skills}: Props) {
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
             className="h-screen flex relative flex-col md:flex-row text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center items-center  mx-auto xl:space-y-0  "
         >
             <h3 className="absolute top-24 md:top-7 uppercase tracking-[20px] text-gray-500 text-2xl">

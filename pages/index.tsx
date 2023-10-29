@@ -125,7 +125,7 @@ export default function Home() {
           </Link>
           <footer className="sticky w-screen flex items-center justify-center bg-gray-500/20 snap-center ">
             <p className="text-2xl text-[#22d3ee]/50 font-semibold tracking-[2px]  py-10">
-              Merci d&apos;avoir scroller jusqu&apos;ici !
+              Merci d&apos;avoir scrollé jusqu&apos;ici !
             </p>
           </footer>
         </main>

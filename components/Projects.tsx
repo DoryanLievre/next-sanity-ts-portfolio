@@ -18,7 +18,7 @@ export default function Projects({projects}: Props) {
                     <div key={project._id} className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p44 h-screen">
                         <Link href={project?.linkToProject} target="_blank" className="cursor-pointer hover:scale-105 focus:scale-105 transition-all duration-100 ease-in-out">
                             <motion.img
-                                className="w-[300px] md:w-[600px] xl:w-[900px] object-cover shadow-2xl border-2 border-[#22d3ee]/50 rounded-2xl cursor-pointer"
+                                className="w-[300px] max-h-32 md:w-[600px] xl:w-[900px] md:max-h-[27rem] xl:max-h-[34rem] object-cover shadow-2xl border-2 border-[#22d3ee]/50 rounded-2xl cursor-pointer"
                                 key={project?._id}
                                 initial={{ y: -300, opacity: 0 }}
                                 transition={{ duration: 1.2 }}

@@ -16,7 +16,7 @@ export default function Projects({projects}: Props) {
             <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-corner-gray-400/20 scrollbar-thumb-[#22d3ee]/80 scrollbar-thin">
                 {projects.map((project, index) => (
                     <div key={project._id} className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p44 h-screen">
-                        <Link href={project?.linkToProject} className="cursor-pointer hover:scale-105 focus:scale-105 transition-all duration-100 ease-in-out">
+                        <Link href={project?.linkToProject} target="_blank" className="cursor-pointer hover:scale-105 focus:scale-105 transition-all duration-100 ease-in-out">
                             <motion.img
                                 className="w-[300px] md:w-[600px] xl:w-[900px] object-cover shadow-2xl border-2 border-[#22d3ee]/50 rounded-2xl cursor-pointer"
                                 key={project?._id}

@@ -9,7 +9,7 @@ import {PageInfo} from "@/typings";
 import {urlForImage} from "@/sanity/lib/image";
 
 type Props = {
-    pageInfo: PageInfo;
+    pageInfo: PageInfo | null;
 }
 
 export default function Hero({ pageInfo }: Props) {

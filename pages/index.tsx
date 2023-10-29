@@ -117,8 +117,8 @@ export default function Home() {
           <Link href="#hero">
             <div className="fixed bottom-5 right-5 cursor-pointer hidden md:block z-50">
               <img
-                  className="h-12 w-12 xl:w-16 xl:h-16 bg-[#22d3ee]/50 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
-                  src="/images/noun-arrow-top.png"
+                  className="md:h-8 md:w-8 xl:w-12 xl:h-12 p-2 bg-[#22d3ee]/50 rounded-full filter grayscale hover:grayscale-0 cursor-pointer box-shadow-xl"
+                  src="/images/arrowTop.png"
                   alt=""
               />
             </div>

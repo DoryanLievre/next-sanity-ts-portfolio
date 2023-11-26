@@ -26,7 +26,7 @@ export default function Skill({
             <div className="absolute opacity-0 group-hover:opacity-80 trnasition duration-500 ease-in-out group-hover:bg-white w-14 h-14 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
                 <div className="flex items-center justify center h-full">
                     <p className="text-center text-sm md:text-2xl pb-2 xl:pb-0 xl:pl-1 font-bold text-black opacity-100">
-                        {skill && skill.numberOfProjectsDone} projets
+                        {skill && skill.numberOfProjectsDone} projet(s)
                     </p>
                 </div>
             </div>

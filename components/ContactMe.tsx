@@ -28,7 +28,7 @@ export default function ContactMe({pageInfo}: Props) {
             </h3>
             <div className="flex flex-col space-y-10">
                 <h4 className="text-lg md:text-4xl font-semibold text-center">
-                    Mon profil vous intérésse ?{" "}
+                    Mon profil vous intéresse ?{" "}
                     <span className="decoration-[#22d3ee]/50 underline">Parlons-en.</span>
                 </h4>
 

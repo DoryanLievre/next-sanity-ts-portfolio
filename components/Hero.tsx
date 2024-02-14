@@ -40,20 +40,20 @@ export default function Hero({ pageInfo }: Props) {
                         <Cursor cursorColor="#22d3ee" />
                     </h1>
                     <div className=" md:pt-5 flex flex-col md:flex-row pt-10">
-                        <Link href="#about">
-                            <button className="heroButton">À Propos</button>
+                        <Link href="#about" className="heroButton">
+                            À Propos
                         </Link>
-                        <Link href="#experience">
-                            <button className="heroButton">Mon Expérience</button>
+                        <Link href="#experience" className="heroButton">
+                            Mon Expérience
                         </Link>
-                        <Link href="#study">
-                            <button className="heroButton">Mes Formations</button>
+                        <Link href="#study" className="heroButton">
+                            Mes Formations
                         </Link>
-                        <Link href="#skills">
-                            <button className="heroButton">Mes Skills</button>
+                        <Link href="#skills" className="heroButton">
+                            Mes Skills
                         </Link>
-                        <Link href="#project">
-                            <button className="heroButton">Mes Projets</button>
+                        <Link href="#project" className="heroButton">
+                            Mes Projets
                         </Link>
                     </div>
                     <h4 className="relative text-gray-500 text-sm md:text-lg text-center top-[75px] hidden md:block">
